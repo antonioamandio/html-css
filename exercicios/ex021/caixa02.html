@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/CSS3_logo_and_wordmark.svg" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 3px;
+        }
+        
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+           background-color: white;
+           padding: 10px;
+           margin: 10px;
+           border-radius: 0px 20px;
+           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.315);
+        }
+
+        article#section-noticias{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article{
+            background-color: white;
+            padding: 10px;
+        }
+
+
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        /* div#bola{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>Desporto Política Tecnologia</article>
+        </section>
+        <section id="noticias">
+            <article id="section-noticias">
+                <h2>Notícia sobre Angola</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ullam doloribus commodi illum odit ratione ducimus asperiores, dolorem deleniti? Quibusdam ipsum sapiente alias autem eius. Corporis asperiores perferendis pariatur sapiente.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por António Amândio</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
