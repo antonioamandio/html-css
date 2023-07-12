@@ -1,7 +1,4 @@
-
-
-
-
+[SITE]
 
 Curiosidades de Tecnologia
 
