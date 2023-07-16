@@ -82,6 +82,7 @@ nav > a{
     text-decoration: none;
     font-weight: normal;
     transition-duration: 0.3s;
+    white-space: nowrap;
 }
 
 nav > a:hover{
