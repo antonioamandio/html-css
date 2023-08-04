@@ -10,32 +10,50 @@
         }
 
         table{
-            width: 500px;
+            width: 420px;
             border-collapse: collapse;
+            /* position: relative; */
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
-
-        .numero{
-            text-align: right;
+        
+        thead > tr > th{
+            background-color: #383838;
+            position: sticky;
+            top: -1px
         }
 
         thead, tfoot{
             color: white;
-            background-color: gray;
+            background-color: #383838;
         }
-    </style>
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        .numero{
+            text-align: right;
+        }
+        </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -149,8 +167,44 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="numero"><strong>210 147 125 (resultado falso)</strong></td>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam laborum sequi quasi.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque
+        possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi
+        deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam
+        magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet
+        labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam
+        laborum sequi quasi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque
+            possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi
+            deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam
+            magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet
+            labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam
+            laborum sequi quasi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque
+                possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi
+                deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam
+                magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet
+                labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam
+                laborum sequi quasi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque
+                    possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi
+                    deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam
+                    magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet
+                    labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam
+                    laborum sequi quasi.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo repellat delectus. Quia magni, modi atque
+                        possimus nemo architecto dolores veritatis facilis culpa, saepe nam consequatur quod reprehenderit ab nobis?Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Veritatis sequi est quasi officiis aliquid dolor, eligendi modi
+                        deserunt error magnam nemo tenetur praesentium reprehenderit? Sequi adipisci voluptatibus illum quibusdam
+                        magni!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem est nesciunt sunt amet
+                        labore in illum, commodi veritatis obcaecati explicabo doloremque excepturi, iste facilis aspernatur quibusdam
+                        laborum sequi quasi.</p>
 </body>
 </html>
