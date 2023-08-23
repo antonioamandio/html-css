@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+        <p>
+            <label for="numero">Número:</label>
+            <input type="range" name="numero" id="numero" min="0" max="10" value="5" oninput="output.innerHTML = Number(numero.value)">
+            <output id="output">5</output>
+        </p>
+        <p>
+            <button>Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+
+</html>

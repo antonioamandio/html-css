@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+        <p>
+            <label for="numero1">Número 1:</label>
+            <input type="number" name="numero1" id="numero1" min="0" max="50" required
+            oninput="soma.innerHTML = Number(numero1.value) + Number(numero1.value)">
+        </p>
+        <p>
+            <label for="numero2">Número 2:</label>
+            <input type="number" name="numero2" id="numero2" min="0" max="50" required
+            oninput="soma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+        </p>
+        <p>
+            <label for="soma">Soma:</label>
+            <output id="soma">0</output>
+        </p>
+        <p>
+            <button>Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>
