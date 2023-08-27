@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <i class="fa-solid fa-bars" onclick="clickMenu()" id="icone-menu"></i>
         <nav>
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -32,8 +33,17 @@
         </article>
     </main>
     <script>
+        let navMobile = document.querySelector('nav');
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                navMobile.style.display = 'block';
+            } else {
+                navMobile.style.display = 'none';
+            }
+        }
+
         function clickMenu() {
-            let navMobile = document.querySelector('nav');
             if (navMobile.style.display == 'block') {
                 navMobile.style.display = 'none';
             } else {
