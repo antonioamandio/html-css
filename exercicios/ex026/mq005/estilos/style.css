@@ -31,10 +31,6 @@ header > i {
     text-align: center;
     padding: 10px;
     font-size: 1.5em;
-}
-
-header > i:hover {
-    color: black;
     cursor: pointer;
 }
 
